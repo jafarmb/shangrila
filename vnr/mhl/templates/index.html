@@ -1,0 +1,22 @@
+{%extends 'theme.html'%}
+{%block vh%}
+<h1><center> WELCOME TO 'MEHFIL'</center></h1>
+{%for kl in mpm%}
+<div class="container">
+    <div class="card" style="width: 18rem;">
+  <img src="{{kl.img}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">NAME:{{kl.name}}</h5>
+    <p class="card-text">D.O.B:{{kl.dob}}</p>
+    <p class="card-text">QUALIFICATION:{{kl.qln}}</p>
+    <p class="card-text">MOBILE NO.:{{kl.mob}}</p>
+    <a href="#" class="btn btn-primary">KEEP IN TOUCH!! YOU ARE ALWAYS WELCOME!!</a>
+  </div>
+</div>
+
+
+</div>
+
+{%endfor%}
+{%endblock%}
+
